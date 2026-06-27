@@ -4,7 +4,7 @@ function Subscription() {
   const payNow = async (amount) => {
     try {
       const { data: order } = await axios.post(
-        "http://localhost:5000/api/payment/create-order",
+        "http://https://streamflix-excj.onrender.com/api/payment/create-order",
         { amount }
       );
 
@@ -20,7 +20,7 @@ function Subscription() {
 
         handler: async function (response) {
           try {
-            await axios.post("http://localhost:5000/api/payment/verify", {
+            await axios.post("http://https://streamflix-excj.onrender.com/api/payment/verify", {
               razorpay_order_id: response.razorpay_order_id,
               razorpay_payment_id: response.razorpay_payment_id,
               razorpay_signature: response.razorpay_signature,

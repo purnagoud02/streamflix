@@ -12,7 +12,7 @@ function ManageMovies() {
   const fetchMovies = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:5000/api/movies"
+        "http://https://streamflix-excj.onrender.com/api/movies"
       );
       setMovies(data);
     } catch (error) {
@@ -25,7 +25,7 @@ function ManageMovies() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/movies/${id}`
+        `http://https://streamflix-excj.onrender.com/api/movies/${id}`
       );
 
       alert("Movie Deleted");

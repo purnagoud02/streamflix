@@ -7,7 +7,7 @@ function Banner() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/movies")
+      .get("http://https://streamflix-excj.onrender.com/api/movies")
       .then((res) => {
         if (res.data.length > 0) {
           setMovie(res.data[0]);
@@ -18,7 +18,7 @@ function Banner() {
   if (!movie) return null;
 
   const poster = movie.poster.startsWith("/uploads")
-    ? `http://localhost:5000${movie.poster}`
+    ? `http://https://streamflix-excj.onrender.com${movie.poster}`
     : movie.poster;
 
   return (

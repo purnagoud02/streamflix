@@ -23,7 +23,7 @@ function EditMovie() {
   const fetchMovie = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:5000/api/movies/${id}`
+        `http://https://streamflix-excj.onrender.com/api/movies/${id}`
       );
 
       setMovie(data);
@@ -44,7 +44,7 @@ function EditMovie() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/movies/${id}`,
+        `http://https://streamflix-excj.onrender.com/api/movies/${id}`,
         movie
       );
 

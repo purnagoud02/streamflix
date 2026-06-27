@@ -14,7 +14,7 @@ function Profile() {
         if (!storedUser?._id) return;
 
         const { data } = await axios.get(
-          `http://localhost:5000/api/watchlist/${storedUser._id}`
+          `http://https://streamflix-excj.onrender.com/api/watchlist/${storedUser._id}`
         );
 
         setWatchlistCount(data.length);

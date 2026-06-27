@@ -10,7 +10,7 @@ function WatchMovie() {
     const fetchMovie = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/movies/${id}`
+          `http://https://streamflix-excj.onrender.comapi/movies/${id}`
         );
 
         console.log("MOVIE DATA:", res.data); // 👈 DEBUG LINE

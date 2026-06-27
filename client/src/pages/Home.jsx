@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     const fetchMovies = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/movies");
+        const res = await axios.get("http://https://streamflix-excj.onrender.com/api/movies");
         setMovies(res.data);
       } catch (err) {
         console.log(err);

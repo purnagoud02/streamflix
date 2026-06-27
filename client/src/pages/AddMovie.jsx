@@ -23,7 +23,7 @@ function AddMovie() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/movies", {
+      await axios.post("http://https://streamflix-excj.onrender.com/api/movies", {
         title: movie.title,
         description: movie.description,
         genre: movie.genre,

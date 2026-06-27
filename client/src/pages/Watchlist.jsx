@@ -19,7 +19,7 @@ function Watchlist() {
         }
 
         const { data } = await axios.get(
-          `http://localhost:5000/api/watchlist/${user._id}`
+          `http://https://streamflix-excj.onrender.com/api/watchlist/${user._id}`
         );
 
         console.log("WATCHLIST:", data);
